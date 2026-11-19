@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Public datasets are downloaded separately
+data/raw/
+
+# Model weights and generated logs
+*.pt
+*.pth
+results/logs/
+
+# Third-party training artifacts
+third_party/informer2020/checkpoints/
+third_party/informer2020/data/
+third_party/informer2020/results/

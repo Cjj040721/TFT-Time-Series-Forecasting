@@ -1,0 +1,56 @@
+{
+  "config": "configs/tft_etth1_96_24.yaml",
+  "lam": 3.0,
+  "results": [
+    {
+      "anomaly_type": "spike",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_std": 0.0,
+      "recall_std": 0.0,
+      "f1_std": 0.0,
+      "n_runs": 10
+    },
+    {
+      "anomaly_type": "level_shift",
+      "precision": 1.0,
+      "recall": 0.9958904109589041,
+      "f1": 0.997902097902098,
+      "precision_std": 0.0,
+      "recall_std": 0.012328767123287688,
+      "f1_std": 0.00629370629370628,
+      "n_runs": 10
+    },
+    {
+      "anomaly_type": "drift",
+      "precision": 1.0,
+      "recall": 0.9152842878400419,
+      "f1": 0.9556600280663676,
+      "precision_std": 0.0,
+      "recall_std": 0.019496418631794753,
+      "f1_std": 0.01066610936374406,
+      "n_runs": 10
+    },
+    {
+      "anomaly_type": "dropout",
+      "precision": 1.0,
+      "recall": 0.8906197076183074,
+      "f1": 0.941755912039077,
+      "precision_std": 0.0,
+      "recall_std": 0.03595346601253843,
+      "f1_std": 0.02050766921862667,
+      "n_runs": 10
+    },
+    {
+      "anomaly_type": "combined",
+      "precision": 1.0,
+      "recall": 0.9244639237995955,
+      "f1": 0.9606509757785646,
+      "precision_std": 0.0,
+      "recall_std": 0.01872165476740162,
+      "f1_std": 0.010133568334313076,
+      "n_runs": 10
+    }
+  ]
+}

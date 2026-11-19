@@ -1,0 +1,42 @@
+# ── Informer Baseline on ETTm1, seq=96, pred=24  (Table 11) ───────────────────
+# ETTm1 is 15-minute frequency → freq='t', n_time_features=5
+
+model: informer
+dataset: ETTm1
+data_path: data/raw/ETT/ETTm1.csv
+target: OT
+freq: t
+
+seq_len: 96
+label_len: 48
+pred_len: 24
+
+factor: 5
+d_model: 512
+n_heads: 8
+e_layers: 3
+d_layers: 2
+d_ff: 2048
+dropout: 0.05
+attn: prob
+embed: timeF
+activation: gelu
+distil: true
+mix: true
+
+batch_size: 32
+epochs: 30
+patience: 5
+lr: 0.0001
+seed: 42
+
+n_features: 7
+n_time_features: 5
+
+third_party_root: third_party/informer2020
+
+anomaly_window: 48
+anomaly_lam: 3.0
+inverse_scale: false
+
+c_out: 7

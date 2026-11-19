@@ -1,0 +1,40 @@
+# ── TFT on ETTh1, seq=96, pred=24 ──────────────────────────────────────────
+
+model: tft
+dataset: ETTh1
+data_path: data/raw/ETT/ETTh1.csv
+target: OT
+freq: h
+
+seq_len: 96
+label_len: 48
+pred_len: 24
+
+# Model architecture
+
+d_model: 128
+n_heads: 4
+lstm_layers: 2
+dropout: 0.1
+
+# Training
+
+batch_size: 32
+epochs: 50
+patience: 8
+lr: 0.0005
+seed: 42
+
+# Features (filled automatically by dataset manager; listed here for clarity)
+
+n_features: 7 # HUFL HULL MUFL MULL LUFL LULL OT
+n_time_features: 4 # month day_of_week day_of_month hour
+
+# Anomaly detection
+
+anomaly_window: 48
+anomaly_lam: 3.0
+
+# Inverse-scale predictions before computing metrics
+
+inverse_scale: False
