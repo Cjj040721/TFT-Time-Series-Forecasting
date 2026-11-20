@@ -10,7 +10,7 @@ A PyTorch research project combining a custom TFT implementation, LSTM and Infor
 [![PyTorch](https://img.shields.io/badge/PyTorch-TFT_from_Scratch-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Inference_API-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Verification](https://img.shields.io/badge/Evaluation_%26_API-Verified-2AA887)](#verification)
+[![Verification](https://github.com/Cjj040721/TFT-Time-Series-Forecasting/actions/workflows/tests.yml/badge.svg)](https://github.com/Cjj040721/TFT-Time-Series-Forecasting/actions/workflows/tests.yml)
 
 [Overview](#overview) · [Results](#results) · [Quick Start](#quick-start) · [Application](#application) · [Verification](#verification) · [Limitations](#limitations)
 
